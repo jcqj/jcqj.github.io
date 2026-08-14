@@ -242,15 +242,16 @@
 
     .blueprint {
         min-height: 320px;
+        width: 80%;
         border-radius: 1rem;
-        position: relative;
         overflow: hidden;
         background: linear-gradient(180deg, rgba(126, 166, 255, .08), rgba(115, 215, 196, .06)), #172131;
         background-image: url(./assets/JCQJ-Caricatura.jpg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        border: 1px solid rgba(126, 166, 255, .16)
+        border: 1px solid rgba(126, 166, 255, .16);
+        justify-self: center;
     }
 
 
