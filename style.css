@@ -151,7 +151,7 @@
     .about-shell,
     .case-shell,
     .contact-shell {
-        background: rgba(21, 29, 41, .78);
+        background: rgba(31, 42, 59, 0.78);
         border: 1px solid var(--line);
         border-radius: var(--radius);
         box-shadow: var(--shadow)
@@ -165,7 +165,7 @@
 
     .hero-shell {
         position: relative;
-        overflow: hidden
+        overflow: hidden;
     }
 
     .hero-shell::after {
@@ -175,7 +175,7 @@
         width: 180px;
         height: 180px;
         border-radius: 50%;
-        background: radial-gradient(circle, rgba(115, 215, 196, .22), transparent 65%);
+        background: radial-gradient(circle, rgba(135, 239, 220, 0.22), transparent 55%);
         pointer-events: none
     }
 
@@ -201,7 +201,8 @@
     }
 
     .info-box {
-        padding: 1rem 0;
+        padding-bottom: 0;
+        padding-top: 1.5rem;
         border-top: 1px solid rgba(255, 255, 255, .05)
     }
 
