@@ -348,3 +348,70 @@
             grid-template-columns: 1fr
         }
     }
+
+
+    /* Marco contenedor de la imagen */
+    .case-preview-frame {
+        background: #0d131d;
+        border: 1px solid rgba(126, 166, 255, 0.18);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Cabecera estilo navegador */
+    .frame-header {
+        background: rgba(23, 33, 49, 0.8);
+        padding: 6px 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border-bottom: 1px solid rgba(126, 166, 255, 0.1);
+    }
+
+    .frame-header .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .frame-header .dot.red {
+        background-color: #ff5f56;
+    }
+
+    .frame-header .dot.yellow {
+        background-color: #ffbd2e;
+    }
+
+    .frame-header .dot.green {
+        background-color: #27c93f;
+    }
+
+    /* Contenedor e imagen */
+    .frame-body {
+        position: relative;
+        max-height: 180px;
+        overflow: hidden;
+    }
+
+    .case-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        /* Enfoca el encabezado de la web */
+        display: block;
+        filter: brightness(0.9) contrast(1.05);
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    /* Interacción Hover al pasar el ratón */
+    .case-shell:hover .case-preview-frame {
+        border-color: rgba(126, 166, 255, 0.4);
+    }
+
+    .case-shell:hover .case-img {
+        transform: scale(1.03);
+        filter: brightness(1);
+    }
