@@ -354,7 +354,7 @@
     .case-preview-frame {
         background: #0d131d;
         border: 1px solid rgba(126, 166, 255, 0.18);
-        border-radius: 8px;
+        border-radius: 10px;
         overflow: hidden;
         transition: border-color 0.4s ease, transform 0.4s ease;
     }
